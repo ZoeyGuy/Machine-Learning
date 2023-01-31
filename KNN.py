@@ -39,6 +39,7 @@ def RoughKNN(knownData:np.ndarray, testData:np.ndarray, k:int) -> np.ndarray:
         Prelabel[i] = MostFreq(knownData[:,-1][L].copy()) #获取标签中出现次数最多的标签
     return Prelabel
 
+
 def MostFreq(Vec:np.ndarray):
     '''	@func: 获取某个向量(行向量)中出现次数最多的元素
         @para  Vec:传入的行向量
